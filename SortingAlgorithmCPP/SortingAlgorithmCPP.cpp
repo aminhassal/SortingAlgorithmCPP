@@ -66,7 +66,7 @@ int partition(int arr[], int low, int high) {
     return (i + 1);
 }
 
-void quickSort(int arr[], int low, int high) {
+void quickSort(int arr[], int low, int high) { // Log(n) <<-----
     if (low < high) {
         // قم بتقسيم المصفوفة واسترداد المؤشر الذي يفصل المصفوفة إلى مجموعتين
         int pi = partition(arr, low, high);
