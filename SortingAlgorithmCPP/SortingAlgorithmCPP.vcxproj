@@ -127,7 +127,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="SearchAndPush.cpp" />
     <ClCompile Include="SortingAlgorithmCPP.cpp" />
+    <ClCompile Include="temp.cpp" />
+    <ClCompile Include="Vactorial.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
