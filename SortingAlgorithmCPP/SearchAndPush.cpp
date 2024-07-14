@@ -49,6 +49,18 @@ int BinarySearch(int arr[], int left, int right, int target) {
 
 //دالة العرض
 
+//  sequancial searching 
+
+void SequentialSearch(int arr[], int size, int target) {
+    for (int i = 0; i < size; i++) {
+        if (arr[i] == target) {
+            cout << ">>>> Found " << " in " << i << " index <<<<" << endl;
+        }
+        else
+            cout << " Not Found " << " in " << i << " index " << endl;
+    }
+}
+
 void DisplayArray(int arr[], int SizeOfArray) {
     for (int i = 0; i <= SizeOfArray; i++) {
         cout << arr[i];
