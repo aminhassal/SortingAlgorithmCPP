@@ -8,9 +8,10 @@ int factorial(int n)
 		return 1;
 	else
 		return n * factorial(n - 1);
-}main()
-{
-	// Calculate
-	int num = 5;
-	int result = factorial(num);
 }
+// main()
+//{
+//	// Calculate
+//	int num = 5;
+//	int result = factorial(num);
+//}

@@ -2,7 +2,7 @@
 using namespace std;
 //اضافة للبداية
 void PushValueInFirst(int arr[], int value, int SizeOfArray) {
-    for (int i = SizeOfArray; i >= 0; i--) {
+    for (int i = SizeOfArray - 1; i >= 0; i--) {
         arr[i + 1] = arr[i];
     }
     arr[0] = value;
@@ -46,20 +46,21 @@ int BinarySearch(int arr[], int left, int right, int target) {
     // إذا لم يتم العثور على القيمة المستهدفة، نعيد -1
     return -1;
 }
+
 //دالة العرض
+
 void DisplayArray(int arr[], int SizeOfArray) {
-    for (int i = 0; i < SizeOfArray + 1; i++) {
+    for (int i = 0; i <= SizeOfArray; i++) {
         cout << arr[i];
     }
 }
-//int main() {
-//    int arr[] = { 2,3,4,5,6,7,8,9 };
-//    int x = sizeof(arr);
-//    cout << x;
-//    //PushValueInFirst(arr, 1, 8);
-//    //PushValueInLast(arr, 10, 9);
-//    //DisplayArray(arr, 9);
-//}
+int main() {
+const int SizeOfArray = 8;
+int arr[SizeOfArray + 1] = { 2,3,4,5,6,7,8,9 };
+PushValueInFirst(arr, 1, SizeOfArray);
+PushValueInLast(arr, 10, SizeOfArray);
+DisplayArray(arr, SizeOfArray);
+}
 
 
 
